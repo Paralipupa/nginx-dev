@@ -40,7 +40,8 @@ services:
 
 # Do not forget to 'docker network create nginx-proxy' before launch, and to add '--network nginx-proxy' to proxied containers. 
 # docker network create --driver overlay --subnet 172.16.0.0/24 --attachable nginx-proxy
-# добавить rootCA.crt в Доверенные корневые сертификаты -> certificate (mmc.exe -> сертификаты)
+# docker network create --subnet 172.16.0.0/24 nginx-proxy
+# добавить rootCA.crt в Доверенные корневые сертификаты (mmc.exe -> сертификаты)
 
 networks:
   default:
